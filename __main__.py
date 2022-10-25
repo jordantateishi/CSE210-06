@@ -112,13 +112,13 @@ def main():
                 run = False
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LCTRL:
+                if event.key == pygame.K_LSHIFT:
                     bullet = pygame.Rect(
                         cat_player.x + cat_player.width, cat_player.y + cat_player.height//2 - 2, 10, 5)
                     cat_bullets.append(bullet)
                     
 
-                if event.key == pygame.K_RCTRL:
+                if event.key == pygame.K_RSHIFT:
                     bullet = pygame.Rect(
                         dog_player.x, dog_player.y + dog_player.height//2 - 2, 10, 5)
                     dog_bullets.append(bullet)
