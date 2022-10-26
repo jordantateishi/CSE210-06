@@ -17,7 +17,8 @@ class Director:
         background_color = constants.background_color
         FPS = constants.FPS
         VEL = constants.VEL
-        secondary_color = constants.secondary_color
+        cat_color = constants.cat_color
+        dog_color = constants.dog_color
         BULLET_VEL = constants.BULLET_VEL
         cat_hit = pygame.USEREVENT + 1
         dog_hit = pygame.USEREVENT + 2
@@ -40,6 +41,8 @@ class Director:
 
         run = True
         while run:
+            pygame.display.set_caption('Cat game')
+            pygame.display.set_icon(cat_image)
             clock.tick(FPS)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:

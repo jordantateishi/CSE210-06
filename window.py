@@ -9,9 +9,9 @@ class Window:
         WIN.blit(dog, (dog_player.x, dog_player.y))
     
         for bullet in dog_bullets:
-            pygame.draw.rect(WIN, constants.secondary_color, bullet)
+            pygame.draw.rect(WIN, constants.dog_color, bullet)
     
         for bullet in cat_bullets:
-            pygame.draw.rect(WIN, constants.secondary_color, bullet)
+            pygame.draw.rect(WIN, constants.cat_color, bullet)
     
         pygame.display.update()
